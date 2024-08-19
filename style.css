@@ -28,9 +28,10 @@ html,body{
 }
 
 .container{
-    height: 65vh;
+    height: 75vh;
   width: 55vw;
-    background-color: #89CFF0;
+  background-color: rgba(137, 207, 240, 1);
+  box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.6);
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -86,6 +87,19 @@ html,body{
   .details{
     font-size: 20px;
   }
+  .previous{
+    background-color: transparent;
+    border: none;
+    border-radius: 15px;
+    font-size: 45px;
+  }
+  .next{
+    background-color: transparent;
+    border: none;
+    border-radius: 15px;
+    font-size: 45px;
+  }
+  
 
   @media (max-width:600px) {
     .title {

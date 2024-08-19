@@ -52,6 +52,12 @@ function updatePersonDetails() {
 }
 
 // Attach the event listeners for both buttons
+next.addEventListener("click", updatePersonDetails);
+prsPreviousButton.addEventListener("click", () => {
+    currentIndex -= 2; // Adjust index to show the previous person
+    updatePersonDetails();
+});
+
 document.addEventListener("keydown", function(event) {
     if (event.key === "ArrowRight") {
         // Right arrow key pressed
